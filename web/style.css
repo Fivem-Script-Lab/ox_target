@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  visibility: hidden;
+  user-select: none;
+  white-space: nowrap;
+  margin: 0;
+  user-select: none;
+  overflow: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.eyeCircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 1.1vh;
+  width: 1.1vh;
+
+  border-radius: 100%;
+  outline: 0.1vh solid white;
+  opacity: 0.5;
+
+  transition: opacity linear 0.2s;
+}
+
+.eyeCircleHover {
+  background-color: gray;
+  opacity: 1;
+}
+
+#options-wrapper {
+  position: absolute;
+  top: 49%;
+  left: 51%;
+}
+
+.option-container {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Inter", serif;
+  background-color: #0f0e0ed8;
+  font-size: 1.2vh;
+
+  margin-bottom: 0.5vh;
+  transition: margin 0.2s linear;
+  height: 2.75vh;
+  width: 11vw;
+  border-radius: 0.2vh;
+  top: 0;
+  animation: fadeIn 0.3s ease-in forwards;
+  padding-right: 0.5vh;
+}
+
+.option-container:hover {
+  background-color: #161515d8;
+  /* left: 1%; */
+  margin-left: 0.75vh;
+}
+
+
+.icon-container  {
+  /* width: 2.1vh; */
+  /* height: 2vh; */
+
+  width: 1.2vw;
+  height: 1.1vw;
+
+  position: relative;
+
+  margin-inline: 0.7vh 0.8vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  background-color: #00dcf079;
+  border-radius: 0.2vh;
+
+}
+
+.option-icon {
+  font-size: 1.25vh;
+  margin-top: 0.1vh;
+
+  color: white;
+  
+}
+
+.option-label {
+  font-weight: 400;
+  color: white;
+}
