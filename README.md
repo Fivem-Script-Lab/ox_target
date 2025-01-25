@@ -1,7 +1,7 @@
 
 # Ox_Target Redesign
 
-Redesign of [ox_inventory](https://github.com/overextended/ox_target).
+Redesign of [ox_target](https://github.com/overextended/ox_target).
 
 [Discord Support Server](https://discord.gg/XFgWTCxuvr)
 
