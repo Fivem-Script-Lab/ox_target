@@ -21,25 +21,17 @@ window.addEventListener("message", (event) => {
       eye.classList.add("eyeCircleHover");
 
       if (event.data.options) {
-        let delay = 0;
         for (const type in event.data.options) {
           event.data.options[type].forEach((data, id) => {
-            setTimeout(() => {
-              createOptions(type, data, id + 1);
-            }, delay);
-            delay += 300;
+            createOptions(type, data, id + 1);
           });
         }
       }
 
       if (event.data.zones) {
-        let delay = 0;
         for (let i = 0; i < event.data.zones.length; i++) {
           event.data.zones[i].forEach((data, id) => {
-            setTimeout(() => {
-              createOptions("zones", data, id + 1, i + 1);
-            }, delay);
-            delay += 300;
+            createOptions("zones", data, id + 1, i + 1);
           });
         }
       }
